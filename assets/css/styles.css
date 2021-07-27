@@ -1,0 +1,136 @@
+:root {
+    --preto: #202020;
+    --branco: #ffffff;
+    --cinza: #555555;
+    --roxo: #420742;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--branco);
+    background-color: var(--roxo);
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.conteiner {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 1.6rem;
+    height: 100vh;
+    width: auto;
+}
+
+.menu {
+    grid-area: 1/1/3/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3.2rem 0 0 0;
+    background-color: var(--preto);
+}
+
+.section-top {
+    grid-area: 1/2/2/4;
+}
+
+.section-top section {
+    display: flex;
+    overflow-x: auto;
+}
+
+.section-top h1 {
+    margin: 2.4rem 0;
+}
+
+.section-bottom {
+    grid-area: 2/2/3/4;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.profile {
+    display:flex;
+    align-items: center;
+}
+
+.profile img {
+    margin: 0 0.8rem 0 0;
+    height: 6rem;
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+.description h1 {
+    font-size: 1.4rem;
+}
+
+.description h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 70%;
+}
+
+.menu-conteiner ul {
+    margin: 4.2rem 0 0 0;
+    padding: 2.4rem;
+    list-style-type: none;
+    border-top: 0.1rem solid rgba(55, 55, 55, 0.5);
+}
+
+.menu-conteiner ul li a {
+    opacity: 60%;
+    transition: all 200ms ease-in-out;
+}
+
+.menu-conteiner ul li a:hover {
+    opacity: 100%;
+}
+
+.card {
+    margin: 0 2.4rem 0 0;
+}
+
+.card img {
+    height: 20rem;
+    border-radius: 1.6rem;
+    opacity: 75%;
+    transition: all 200ms ease-in-out;
+}
+
+.card img:hover {
+    opacity: 100%;
+}
+
+.card h1 {
+    margin: 0.8rem 0;
+    font-size: 2.4rem;
+}
+
+.mais-tocadas {
+    grid-area: 1/1/2/2;
+    background-color: var(--preto);
+}
+
+.bandas-novas {
+    grid-area: 1/3/2/4;
+    background-color: var(--preto);
+}
